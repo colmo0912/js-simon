@@ -24,11 +24,18 @@ setTimeout (inputNumeriUtente, 30000);
 
 function inputNumeriUtente(){
 
-    for(i=0 ; i<5;i++){
+    for(i=0 ; i<5; i++){
 
         var imputUtente = parseInt(prompt("Scrivi in successione i numeri che hai letto nella schermata precendente"));
+
+        // inserisco i numeri inseriti dall'utente dentro l'array numeriUtente
+        numeriUtente.push(imputUtente);
+        console.log(numeriUtente)
+
     }
 }
+
+
 
 
 
