@@ -17,7 +17,18 @@ while (numeriRandom.length < 5) {
 
 //inserisco dentro un alert i 5 numeri generati
 
-alert("Ciao! i 5 numeri generati dal PC sono: " + numeriRandom)
+alert("Ciao! i 5 numeri generati dal PC sono: " + numeriRandom + " Hai 30 secondi per memorizzarli e riscriverli!");
+
+//inseriso un timer di 30 secondi e inserisco un for con i 5 prompt dove inserire i numeri dell'utente
+setTimeout (inputNumeriUtente, 30000);
+
+function inputNumeriUtente(){
+
+    for(i=0 ; i<5;i++){
+
+        var imputUtente = parseInt(prompt("Scrivi in successione i numeri che hai letto nella schermata precendente"));
+    }
+}
 
 
 
