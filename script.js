@@ -24,31 +24,54 @@ setTimeout (inputNumeriUtente, 30000);
 
 function inputNumeriUtente(){
 
+    var imputGiusti = [];
+    var imputSbagliati = [];
+    var imputUtenteDaInserire =[]
+
     for(i=0 ; i<5; i++){
         var imputUtente = parseInt(prompt("Scrivi i 5 numeri che hai letto nella schermata precendente"));
+        // inserisco i numeri inseriti dall'utente dentro l'array numeriUtente
         numeriUtente.push(imputUtente);
+
+        if (imputUtenteDaInserire.indexOf(imputUtente) === -1){
+            imputUtenteDaInserire.push(imputUtente)
+
+        
+
+            if (numeriRandom.indexOf(imputUtente) === -1){
+                imputSbagliati.indexOf(imputUtente)
+            }else {
+
+                imputGiusti.push(imputUtente)
+            }
+        }else {
+
+            alert("i numeri non possono essere uguali, scegline un altro")
+        }
     }
-     // inserisco i numeri inseriti dall'utente dentro l'array numeriUtente
-    console.log(numeriUtente)
+    
+    var rispostaNumeriCorretti = document.getElementById("risultatoEsercizio");
+    rispostaNumeriCorretti.innerHTML="i numeri uguali sono: " + imputGiusti + " per un totale di " + imputGiusti.length + " numeri giusti!"
+
+
 
 }
 
 //confronto tra gli array
 
-var numeroTrovato = false
+// var numeroTrovato = false
 
-for(var j=0; j < numeriRandom.length; j++)
+// for(var j=0; j < numeriRandom.length; j++)
 
-var numeroRandomComparato = numeriRandom[j]
+// var numeroRandomComparato = numeriRandom[j]
 
-if(numeroRandomComparato == numeriUtente[j]){
-    numeroTrovato = true;
-    console.log("il numero trovato è " + numeroTrovato)
-} if (!numeroTrovato) {
+// if(numeroRandomComparato == numeriUtente[j]){
+//     numeroTrovato = true;
+//     console.log("il numero trovato è " + numeroTrovato)
+// } if (!numeroTrovato) {
 
-    console.log("Non hai trovato numeri")
-}
-
+//     console.log("Non hai trovato numeri")
+// }
 
 
 
