@@ -35,9 +35,7 @@ function inputNumeriUtente(){
 
         if (imputUtenteDaInserire.indexOf(imputUtente) === -1){
             imputUtenteDaInserire.push(imputUtente)
-
-        
-
+            
             if (numeriRandom.indexOf(imputUtente) === -1){
                 imputSbagliati.indexOf(imputUtente)
             }else {
@@ -51,7 +49,8 @@ function inputNumeriUtente(){
     }
     
     var rispostaNumeriCorretti = document.getElementById("risultatoEsercizio");
-    rispostaNumeriCorretti.innerHTML="i numeri uguali sono: " + imputGiusti + " per un totale di " + imputGiusti.length + " numeri giusti!"
+    // rispostaNumeriCorretti.innerHTML="i numeri uguali sono: " + imputGiusti + " per un totale di " + imputGiusti.length + " numeri giusti!"
+    rispostaNumeriCorretti.innerHTML="Hai indovinato " + imputGiusti.length + " numeri su 5! I numeri corrsipondenti sono: " + imputGiusti 
 
 
 
